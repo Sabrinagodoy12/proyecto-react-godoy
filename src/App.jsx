@@ -1,30 +1,12 @@
 import "./App.css";
-import { Button } from "./components/Button";
+import { ItemListContainer } from "./components/ItemListContainer";
+import { NavBar } from "./components/NavBar";
 
-// const styles = {
-//   Button: {
-//     color: "yellow",
-//     backgroundColor: "black",
-//   },
-// };
-
-const isTrue = !true;
-
-// function App() {
-//   return <>{isTrue ? <h1>Holis</h1> : <Button style={styles.button} />}</>;
-// }
-
-function App (){
+function App() {
   return (
     <>
-    {isTrue ? (
-      <h1>Alo</h1>
-    ) : (
-      <>
-      {[0, 1, 2, 3, 4].map(()=> (
-        <Button/>
-      ))}
-    </>)}
+      <NavBar />
+      <ItemListContainer greeting="Proximamente...los productos aquí" />
     </>
   );
 }
