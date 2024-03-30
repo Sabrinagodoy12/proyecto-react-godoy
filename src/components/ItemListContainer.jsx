@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Container from "react-bootstrap/Container";
-import { ItemList } from "./itemList";
+import { ItemList } from "./ItemList";
 import data from "../data/products.json";
 
 export const ItemListContainer = () => {

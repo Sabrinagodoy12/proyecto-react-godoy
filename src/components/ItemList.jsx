@@ -1,9 +1,11 @@
-export const ItemList = () => {
+import {Item} from "./Item";
+
+export const ItemList = ({products}) => {
   return (
-    <>
+    <div className="tarjetas">
       {products.map((product) => (
-        <h2>{product.name}</h2>
+        <Item key={product.id} product ={ product}/>
       ))}
-    </>
+    </div>
   );
 };
