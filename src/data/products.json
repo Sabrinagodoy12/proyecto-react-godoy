@@ -1,45 +1,45 @@
 [
   {
     "name": "Monitor Samsung LED",
-    "id": "1",
-    "category": "Monitor",
+    "id": 1,
+    "category": "monitores",
     "detail": "Gracias a su pantalla LCD vas a obtener gráficas con gran nitidez, colores vivos y atractivos.",
     "img": "https://images.pexels.com/photos/1714204/pexels-photo-1714204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    "name": "Monitor Aplle",
-    "id": "2",
-    "category": "Monitor",
+    "name": "Monitor Apple",
+    "id": 2,
+    "category": "monitores",
     "img": "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "name": "Gabinete transparente",
-    "id": "3",
-    "category": "Gabinete",
+    "id": 3,
+    "category": "gabinetes",
     "img": "https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "name": "Gabinete con leds",
-    "id": "4",
-    "category": "Gabinete",
+    "id": 4,
+    "category": "gabinetes",
     "img": "https://images.pexels.com/photos/19012047/pexels-photo-19012047/free-photo-of-tecnologia-ordenador-escritorio-mesa-de-oficina.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "name": "Auriculares negros",
-    "id": "5",
-    "category": "Auriculares",
+    "id": 5,
+    "category": "auriculares",
     "img": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "name": "Auriculares rosas",
-    "id": "6",
-    "category": "Auriculares",
+    "id": 6,
+    "category": "auriculares",
     "img": "https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "name": "Auriculares blancos",
-    "id": "7",
-    "category": "Auriculares",
+    "id": 7,
+    "category": "auriculares",
     "img": "https://images.pexels.com/photos/3394652/pexels-photo-3394652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]
