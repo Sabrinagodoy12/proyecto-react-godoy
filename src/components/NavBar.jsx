@@ -27,3 +27,5 @@ export const NavBar = () => {
     </Navbar>
   );
 };
+
+    //  <Nav.link to="/" as={NavLink}>Rayzerk</Nav.link>

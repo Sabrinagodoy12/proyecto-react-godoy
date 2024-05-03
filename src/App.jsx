@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { getFirestore, getDoc, doc } from "firebase/firestore";
 
 import "./App.css";
 import { ItemListContainer } from "./components/ItemListContainer";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:id" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/Cart" element={<>Cart</>}/>
         </Routes>
       </BrowserRouter>
     </>

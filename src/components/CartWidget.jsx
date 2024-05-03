@@ -3,7 +3,7 @@ import cart from "../assets/cart.png";
 export const CartWidget = () => {
   return (
     <div id="cart-widget">
-      <img src={cart} alt="imagen de carrito de compras" width={40} />
+      <img src={cart} alt="icono de carrito de compras" width={40} />
       <span>10</span>
     </div>
   );
