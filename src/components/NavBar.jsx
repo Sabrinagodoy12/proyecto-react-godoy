@@ -10,7 +10,9 @@ export const NavBar = () => {
   return (
     <Navbar data-bs-theme="dark" className="nav-bar">
       <Container>
-        <Navbar.Brand to="#home">Rayzerk</Navbar.Brand>
+        <Nav.Link to="/" as={NavLink} className="titulo-nav">
+          Rayzerk
+        </Nav.Link>
         <Nav className="me-auto">
           <Nav.Link to="/category/auriculares" as={NavLink}>
             Auriculares
@@ -28,4 +30,4 @@ export const NavBar = () => {
   );
 };
 
-    //  <Nav.link to="/" as={NavLink}>Rayzerk</Nav.link>
+//  <Nav.link to="/" as={NavLink}>Rayzerk</Nav.link>

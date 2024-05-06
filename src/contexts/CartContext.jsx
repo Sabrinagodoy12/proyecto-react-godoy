@@ -2,6 +2,7 @@ import { remove } from "firebase/database";
 import { createContext, useState } from "react";
 
 export const CartContext = createContext();
+
 export const Provider = ({ children }) => {
   const [items, setItems] = useState([]);
 

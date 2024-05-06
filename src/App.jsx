@@ -7,14 +7,13 @@ import { ItemListContainer } from "./components/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetailContainer";
 import { NavBar } from "./components/NavBar";
 import { useEffect, useState } from "react";
-import { Provider } from "./context/CartContext";
+import { Provider } from "./contexts/CartContext";
 
 function App() {
   const [articulos, setArticulos] = useState([]);
   const [loading, setLoading] = useState(true);
 
   return (
-    <>
     <Provider>
       <BrowserRouter>
         <NavBar />
@@ -22,11 +21,10 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:id" element={<ItemListContainer />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/cart" element={<>Cart</>}/>
+          <Route path="/cart" element={<>Cart</>} />
         </Routes>
       </BrowserRouter>
-      </Provider>
-    </>
+    </Provider>
   );
 }
 

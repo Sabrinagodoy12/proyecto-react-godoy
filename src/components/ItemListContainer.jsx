@@ -43,18 +43,3 @@ export const ItemListContainer = () => {
     </Container>
   );
 };
-
-// useEffect(() => {
-//   const get = new Promise((resolve, reject) => {
-//     setTimeout(() => resolve(data), 2000);
-//   });
-
-//   get.then((data) => {
-//     if (!id) {
-//       setProducts(data);
-//     } else {
-//       const filtered = data.filter((producto) => producto.category === id);
-//       setProducts(filtered);
-//     }
-//   });
-// }, [id]);
