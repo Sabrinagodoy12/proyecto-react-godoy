@@ -29,3 +29,21 @@ h1 {
  
 
 }
+
+.producto-titulo{
+  font-weight: 700;
+}
+.producto-imagen{
+  height: 40rem;
+  border-radius: 1.5rem;
+  border-color: ;
+}
+.producto-descripcion{
+  color: white;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+.producto-detalle{
+  color: white;
+  font-weight: 600;
+}

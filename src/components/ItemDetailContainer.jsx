@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import Container from "react-bootstrap/Container";
-import data from "../data/products.json";
 import { useParams } from "react-router-dom";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
+import { ItemDetail } from "./ItemDetail";
 
 export const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
@@ -18,33 +17,7 @@ export const ItemDetailContainer = () => {
       setProduct({ id: snapshot.id, ...snapshot.data() });
     });
   }, [id]);
+  if (!product) return <div>loading</div>;
 
-  return (
-    <Container className="mt-4">
-      <h1>{product.title}</h1>
-      <img src={product.imageId} alt={product.title} />
-      <p>{product.description}</p>
-      <div>{`stock ${product.stock}`}</div>
-      <div>{`Precio ${product.price}`}</div>
-    </Container>
-  );
+  return <ItemDetail product={product}/>;
 };
-
-// useEffect(() => {
-//   const get = new Promise((resolve, reject) => {
-//     setTimeout(() => resolve(data), 2000);
-//   });
-//   get.then((data) => {
-//     const filter = data.find((producto) => producto.id === Number(id));
-//     setProduct(filter);
-//   });
-// }, [id]);
-// if (!product) return <div>Cargando</div>;
-
-// return (
-//   <Container className="mt-4">
-//     <h1>{product.name}</h1>
-//     <img src={product.img} alt="a" />
-//   </Container>
-// );
-// };
