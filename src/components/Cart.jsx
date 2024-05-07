@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import { useContext, useState } from "react";
 import { CartContext } from "../contexts/CartContext";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const initialValues = {
   name: "",
@@ -10,7 +11,7 @@ const initialValues = {
 
 export const Cart = () => {
   const [values, setValues] = useState(initialValues);
-  const { items } = useContext(CartContext);
+  const { clear, items } = useContext(CartContext);
 
   const total = () =>
     items.reduce((acc, item) => acc + item.count * item.price, 0);
@@ -21,6 +22,26 @@ export const Cart = () => {
         [ev.target.name]: ev.target.value,
       };
     });
+  };
+
+  const handleSubmit = () => {
+    const order = {
+      buyer: values,
+      items,
+      total: total(),
+    };
+    const db = getFirestore();
+    const orderCollection = collection(db, "productos");
+    addDoc(orderCollection, order)
+      .then(({ id }) => {
+        if (id) {
+          alert("Su orden: " + id + "ha sido completada con éxito!");
+        }
+      })
+      .finally(() => {
+        clear();
+        setValues(initialValues);
+      });
   };
 
   return (
@@ -36,8 +57,9 @@ export const Cart = () => {
           </ul>
         );
       })}
+
       <div className="total-cart"> Total: {total()}</div>
-      {
+      {items?.length > 0 && (
         <form>
           <label>Nombre</label>
           <input
@@ -60,8 +82,11 @@ export const Cart = () => {
             name="email"
             onChange={handleChange}
           />
+          <button type="button" onClick={handleSubmit} className="btn-enviar">
+            Enviar
+          </button>
         </form>
-      }
+      )}
     </Container>
   );
 };
