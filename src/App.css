@@ -33,11 +33,14 @@ h1 {
   flex-wrap: wrap;
   gap: 3rem;
 }
+.imagenes-productos{
+  height: 27rem;
+}
 .producto-titulo {
   font-weight: 700;
 }
 .producto-imagen {
-  height: 35rem;
+  height: 40rem;
   border-radius: 1.5rem;
 }
 .producto-descripcion {
@@ -73,4 +76,10 @@ button {
   border-radius: 10px;
   border-color: white;
   height: 2.5rem;
+}
+.lista-cart{
+  color: white;
+}
+.total-cart{
+  color: white;
 }

@@ -23,8 +23,8 @@ export const Provider = ({ children }) => {
             ...i,
             count: i.count + count,
           };
-        }else {
-            return i;
+        } else {
+          return i;
         }
       });
       setItems(updateItems);
@@ -32,7 +32,7 @@ export const Provider = ({ children }) => {
       setItems([...items, { ...item, count }]);
     }
   };
-  
+
   return (
     <CartContext.Provider value={{ addItem, clear, items, removeItem }}>
       {children}
