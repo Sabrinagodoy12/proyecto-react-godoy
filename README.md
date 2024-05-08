@@ -1,8 +1,14 @@
-# React + Vite
+# E-commerce de productos gamers
+##
+## Features
+E-commerce con tres páginas de los productos por su categoría, una página de inicio y un carrito de compras en dónde se puede ver la cantidad, precio y categoría de cada producto, el valor total de la suma de los productos y eliminar uno o todos.
+También hay un form para rellenar y enviar los datos. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech
 
-Currently, two official plugins are available:
+- [ReactJs] - Creador de la interfaz de usuario
+- [Vite] - Compilador
+- [Firestore] - Para crear la Firebase que tiene el proyecto
+- [CSS] - Para la edición de la presentación de la web
+- [JSON]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

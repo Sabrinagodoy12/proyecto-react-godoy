@@ -56,13 +56,17 @@ export const Cart = () => {
             <li>Prod: {i.title}</li>
             <li>Cant: {i.count}</li>
             <li>$ {i.price}</li>
-            <li onClick={() => handleRemove(i.id)} className="x-cart">X</li>
+            <li onClick={() => handleRemove(i.id)} className="x-cart">
+              X
+            </li>
           </ul>
         );
       })}
 
       <div className="total-cart"> Total: $ {total()}</div>
-      <button type="button" onClick={handleClear} className="btn-vaciar">Vaciar carrito</button>
+      <button type="button" onClick={handleClear} className="btn-vaciar">
+        Vaciar carrito
+      </button>
       {items?.length > 0 && (
         <form className="form-cart">
           <label>Nombre</label>

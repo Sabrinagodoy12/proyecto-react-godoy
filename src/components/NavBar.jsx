@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 
 import { CartWidget } from "./CartWidget";
 
-//NavBar
 export const NavBar = () => {
   return (
     <Navbar data-bs-theme="dark" className="nav-bar">
@@ -30,4 +29,3 @@ export const NavBar = () => {
   );
 };
 
-//  <Nav.link to="/" as={NavLink}>Rayzerk</Nav.link>
