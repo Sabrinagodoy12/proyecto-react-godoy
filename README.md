@@ -12,3 +12,6 @@ También hay un form para rellenar y enviar los datos.
 - [CSS] - Para la edición de la presentación de la web
 - [JSON]
 
+## Clonar repositorio
+
+git clone https://github.com/Sabrinagodoy12/proyecto-react-godoy.git
