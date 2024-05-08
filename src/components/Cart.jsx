@@ -11,7 +11,7 @@ const initialValues = {
 
 export const Cart = () => {
   const [values, setValues] = useState(initialValues);
-  const { clear, items } = useContext(CartContext);
+  const { clear, items, removeItem } = useContext(CartContext);
 
   const total = () =>
     items.reduce((acc, item) => acc + item.count * item.price, 0);
@@ -44,6 +44,9 @@ export const Cart = () => {
       });
   };
 
+  const handleClear = () => clear();
+  const handleRemove = (id) => removeItem(id);
+
   return (
     <Container className="mt-4">
       <h1>Productos</h1>
@@ -53,14 +56,15 @@ export const Cart = () => {
             <li>Prod: {i.title}</li>
             <li>Cant: {i.count}</li>
             <li>$ {i.price}</li>
-            {/* <li onClick={handleRemove}>X</li> */}
+            <li onClick={() => handleRemove(i.id)} className="x-cart">X</li>
           </ul>
         );
       })}
 
-      <div className="total-cart"> Total: {total()}</div>
+      <div className="total-cart"> Total: $ {total()}</div>
+      <button type="button" onClick={handleClear} className="btn-vaciar">Vaciar carrito</button>
       {items?.length > 0 && (
-        <form>
+        <form className="form-cart">
           <label>Nombre</label>
           <input
             type="text"

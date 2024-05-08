@@ -79,11 +79,43 @@ button {
 }
 .lista-cart{
   color: white;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 1rem;
+  width: 15rem;
+  height: 7rem;
+  
 }
+
 .total-cart{
-  color: white;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  background-color: white;
+  width: 15rem;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+
+.x-cart{
+  color:blueviolet;
+  font-weight: 900;
+  font-size: 1.5rem;
+  list-style: none;
+  margin-left: 11.5rem;
 }
 .btn-enviar{
   margin-left: 1rem;
   width: 5rem;
+}
+.btn-vaciar{
+  margin-top: 1rem;
+}
+.form-cart{
+  color: white;
+  margin-top: 1rem;
+}
+input{
+  margin-right: 1rem;
+}
+label{
+  margin-right: 1rem;
 }
