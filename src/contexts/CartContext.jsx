@@ -1,3 +1,4 @@
+import { remove } from "firebase/database";
 import { createContext, useState } from "react";
 
 export const CartContext = createContext();

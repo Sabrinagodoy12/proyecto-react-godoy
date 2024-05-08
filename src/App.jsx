@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { getFirestore, getDoc, doc } from "firebase/firestore";
 
 import "./App.css";
 import { ItemListContainer } from "./components/ItemListContainer";
